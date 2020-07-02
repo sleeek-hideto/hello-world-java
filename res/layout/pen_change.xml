@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+		xmlns:tools="http://schemas.android.com/tools"
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/full_view">
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+		<LinearLayout
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+		    	android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_alignParentTop="false" android:layout_alignParentRight="false">
+		    <Gallery android:layout_width="fill_parent" android:id="@+id/pen_list" android:layout_height="wrap_content"></Gallery>
+			<TextView android:id="@+id/space1" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+			<TextView android:id="@+id/note1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center"/>
+    	</LinearLayout>
+    	
+		<com.google.ads.AdView
+				android:id="@+id/adView"
+				android:gravity="center_horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				ads:adUnitId="a150f431593b272"
+				ads:adSize="BANNER"/>
+	</RelativeLayout>
+    
+</LinearLayout>
