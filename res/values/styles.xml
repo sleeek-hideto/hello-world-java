@@ -1,0 +1,11 @@
+<resources>
+
+	<style name="AppTheme" parent="android:Theme.Light" />
+    
+	<drawable name="backcolor">#88000000</drawable>
+	<style name="Theme.ChildTranslucent" parent="android:style/Theme.Translucent">
+		<item name="android:windowBackground">@drawable/backcolor</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+
+</resources>
